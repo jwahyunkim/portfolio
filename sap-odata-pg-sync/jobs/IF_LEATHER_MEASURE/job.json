@@ -1,0 +1,55 @@
+{
+    "id": "IF_LEATHER_MEASURE",
+    "mode": "push",
+    "odataUrl": "https://vhcnfcdsci.sap.changshininc.com:44300/sap/opu/odata4/sap/zqm_dm_recv_leather_measure_sb/srvd_a2x/sap/zqm_dm_leather_measure_srv/0001/ZQM_I_LEATHER_MEASURE_HEADER",
+    "schedule": "*/5 * * * *",
+    "source": {
+        "type": "dual",
+        "schema": "quality",
+        "table": "dmif_leather_measuring_tail",
+        "pk": [
+            "plant_cd",
+            "measure_date",
+            "barcode",
+            "seq"
+        ],
+        "headerSql": "SELECT * FROM quality.dmif_leather_measuring_head",
+        "itemSql": "SELECT * FROM quality.dmif_leather_measuring_tail WHERE ifstatus = 'PENDING'",
+        "join": {
+            "headerKey": [
+                "plant_cd",
+                "measure_date",
+                "barcode"
+            ],
+            "itemKey": [
+                "plant_cd",
+                "measure_date",
+                "barcode"
+            ]
+        },
+        "batchSize": 10,
+        "failMode": "continue",
+        "duplicateAsSent": {
+            "enabled": true,
+            "codes": [
+                "DBSQL_DUPLICATE_KEY_ERROR"
+            ]
+        }
+    },
+    "sapSuccess": {
+        "checkMessages": true,
+        "requireAll": true,
+        "echoKeys": [
+            "barcode",
+            "measure_date"
+        ],
+        "echoItemMatch": {
+            "path": "_item",
+            "keys": [
+                "barcode",
+                "measure_date",
+                "seq"
+            ]
+        }
+    }
+}

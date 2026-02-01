@@ -1,0 +1,62 @@
+{
+  "header": {
+    "werks": "plant_cd"
+  },
+  "item": {
+    "fields": {
+      "werks": "plant_cd",
+      "fa_wc_cd": "fa_wc_cd",
+      "erp_fa_wc_cd": "erp_fa_wc_cd",
+      "rst_date": "rst_date",
+      "rst_time": "rst_hms",
+      "style_dev": "style_dev",
+      "ebeln": "po_no",
+      "in_date": "in_ymd",
+      "product_code": "product_code",
+      "div": "div",
+      "gen": "gen",
+      "size_cd": "size_cd",
+      "shift_cd": "shift_cd",
+      "data_rst": "data_rst",
+      "std_min": "standard_min",
+      "std_max": "standard_max",
+      "status": "status",
+      "value_1": "value_1",
+      "value_2": "value_2",
+      "value_3": "value_3",
+      "value_4": "value_4",
+      "value_5": "value_5",
+      "midsole_type": "midsole_type",
+      "thickness_1": "thickness_1",
+      "thickness_2": "thickness_2",
+      "weight_unit": "wegith_unit",
+      "thick_unit": "thick_unit"
+    },
+    "numberFields": [
+      "data_rst",
+      "std_min",
+      "std_max",
+      "thickness_1",
+      "thickness_2"
+    ],
+    "dateRules": {
+      "rst_date": "YYYYMMDD->YYYY-MM-DD",
+      "in_date": "YYYYMMDD->YYYY-MM-DD"
+    },
+    "timeRules": {
+      "rst_time": "HHmmss->HH:mm:ss"
+    },
+    "nullPolicy": "empty",
+    "fieldNullPolicy": {
+       "thickness_1": "zero",
+       "thickness_2": "zero"
+    },
+    "length": {
+      "value_1": 5,
+      "value_2": 5,
+      "value_3": 5,
+      "value_4": 5,
+      "value_5": 5
+    }
+  }
+}

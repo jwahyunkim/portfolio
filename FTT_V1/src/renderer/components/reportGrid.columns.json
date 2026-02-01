@@ -1,0 +1,892 @@
+[
+  {
+    "key": "factory_group",
+    "header": "Factory\nGroup",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF70AD47",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "factory_code",
+    "header": "Factory\nCode",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF70AD47",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "plant",
+    "header": "Plant",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF70AD47",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "line",
+    "header": "Line",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF70AD47",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "inspection_date_dd_mmm_yyyy",
+    "header": "Inspection Date\n(dd-mmm-yyyy)",
+    "widthPx": 140,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF70AD47",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "season",
+    "header": "Season",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF70AD47",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "model",
+    "header": "Model",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF70AD47",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "style_code",
+    "header": "Style\nCode",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF70AD47",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "colorway_code",
+    "header": "Colorway\nCode",
+    "widthPx": 80,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF70AD47",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "total_a_grade_pairs",
+    "header": "Total A\nGrade\nPairs",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF4472C4",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "1st_time_rework_pairs",
+    "header": "1st Time\nRework\nPairs",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF4472C4",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "total_rework",
+    "header": "Total\nRework",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF4472C4",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "total_b_grade_pairs_reject",
+    "header": "Total B\nGrade\nPairs\n(Reject)",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF4472C4",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "total_c_grade_pairs_reject",
+    "header": "Total C\nGrade\nPairs\n(Reject)",
+    "widthPx": 70,
+    "align": "center",
+    "rotateHeader": false,
+    "headerBg": "FF4472C4",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "airbag_defect_rework",
+    "header": "Airbag Defect_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "alignment_l_r_symmetry_rework",
+    "header": "Alignment L+R Symmetry_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "bond_gap_rat_hole_rework",
+    "header": "Bond gap / Rat hole_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "delamination_rework",
+    "header": "Delamination_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "over_cement_rework",
+    "header": "Over cement _Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "contamination_rework",
+    "header": "Contamination_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "interior_defect_rework",
+    "header": "Interior defect _Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "accessories_defect_rework",
+    "header": "Accessories defect _Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "color_paint_migration_bleeding_rework",
+    "header": "Color/Paint migration, bleeding_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "color_mis_match_rework",
+    "header": "Color mis-match _Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "paint_surface_quality_rework",
+    "header": "Paint surface quality _Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "material_damaged_rework",
+    "header": "Material damaged _Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "holes_quality_rework",
+    "header": "Holes quality_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "over_buffing_rework",
+    "header": "Over buffing_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "jump_broken_loose_stitch_rework",
+    "header": "Jump / Broken / Loose Stitch_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "thread_end_rework",
+    "header": "Thread end_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "stitching_margin_rework",
+    "header": "Stitching margin _Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "off_center_rework",
+    "header": "Off-center_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "rocking_rework",
+    "header": "Rocking_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "toe_spring_rework",
+    "header": "Toe spring_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "wrinkle_or_deformed_bottom_rework",
+    "header": "Wrinkle or Deformed Bottom_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "wrinkle_or_deformed_upper_rework",
+    "header": "Wrinkle or Deformed Upper_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "x_ray_rework",
+    "header": "X-ray_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "yellowing_rework",
+    "header": "Yellowing_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "other_defects_rework",
+    "header": "Other Defects_Rework",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFFFE699",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "airbag_defect_b_grade",
+    "header": "Airbag Defect_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "alignment_l_r_symmetry_b_grade",
+    "header": "Alignment L+R Symmetry_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "bond_gap_rat_hole_b_grade",
+    "header": "Bond gap / Rat hole_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "delamination_b_grade",
+    "header": "Delamination_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "over_cement_b_grade",
+    "header": "Over cement _B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "contamination_b_grade",
+    "header": "Contamination_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "interior_defect_b_grade",
+    "header": "Interior defect _B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "accessories_defect_b_grade",
+    "header": "Accessories defect _B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "color_paint_migration_bleeding_b_grade",
+    "header": "Color/Paint migration, bleeding_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "color_mismatch_b_grade",
+    "header": "Color mismatch _B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "paint_surface_quality_b_grade",
+    "header": "Paint surface quality_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "material_damaged_b_grade",
+    "header": "Material damaged _B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "holes_quality_b_grade",
+    "header": "Holes quality_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "over_buffing_b_grade",
+    "header": "Over buffing_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "jump_broken_loose_stitch_b_grade",
+    "header": "Jump / Broken / Loose Stitch_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "thread_end_b_grade",
+    "header": "Thread end_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "stitching_margin_b_grade",
+    "header": "Stitching margin _B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "off_center_b_grade",
+    "header": "Off-center_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "rocking_b_grade",
+    "header": "Rocking_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "toe_spring_b_grade",
+    "header": "Toe spring_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "wrinkle_or_deformed_bottom_b_grade",
+    "header": "Wrinkle or Deformed Bottom_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "wrinkle_or_deformed_upper_b_grade",
+    "header": "Wrinkle or Deformed Upper_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "x_ray_b_grade",
+    "header": "X-ray_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "yellowing_b_grade",
+    "header": "Yellowing_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "other_defects_b_grade",
+    "header": "Other Defects_B-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFF4B084",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "airbag_defect_c_grade",
+    "header": "Airbag Defect_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "alignment_l_r_symmetry_c_grade",
+    "header": "Alignment L+R Symmetry_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "bond_gap_rat_hole_c_grade",
+    "header": "Bond gap/Rat hole_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "delamination_c_grade",
+    "header": "Delamination_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "over_cement_c_grade",
+    "header": "Over cement _C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "contamination_c_grade",
+    "header": "Contamination_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "interior_defect_c_grade",
+    "header": "Interior defect _C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "accessories_defect_c_grade",
+    "header": "Accessories defect _C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "color_paint_migration_bleeding_c_grade",
+    "header": "Color/Paint migration, bleeding_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "color_mismatch_c_grade",
+    "header": "Color mismatch _C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "paint_surface_quality_c_grade",
+    "header": "Paint surface quality _C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "material_damaged_c_grade",
+    "header": "Material damaged _C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "holes_quality_c_grade",
+    "header": "Holes quality_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "over_buffing_c_grade",
+    "header": "Over buffing_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "jump_broken_loose_stitch_c_grade",
+    "header": "Jump / Broken / Loose Stitch_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "thread_end_c_grade",
+    "header": "Thread end_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "stitching_margin_c_grade",
+    "header": "Stitching margin _C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "off_center_c_grade",
+    "header": "Off-center_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "rocking_c_grade",
+    "header": "Rocking_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "toe_spring_c_grade",
+    "header": "Toe spring_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "wrinkle_or_deformed_bottom_c_grade",
+    "header": "Wrinkle or Deformed Bottom_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "wrinkle_or_deformed_upper_c_grade",
+    "header": "Wrinkle or Deformed Upper_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "x_ray_c_grade",
+    "header": "X-ray_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "yellowing_c_grade",
+    "header": "Yellowing_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  },
+  {
+    "key": "other_defects_c_grade",
+    "header": "Other Defects_C-Grade",
+    "widthPx": 50,
+    "align": "center",
+    "rotateHeader": true,
+    "headerBg": "FFC65911",
+    "headerFontColor": "FF000000",
+    "cellBg": "FFFFFFFF"
+  }
+]

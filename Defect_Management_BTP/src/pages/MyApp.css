@@ -1,0 +1,17 @@
+.label-colon::after {
+  content: ":";
+  margin-left: 4px;
+  color: gray;
+  font-size: 0.8em;
+  position: relative;
+  top: 2px;
+  /* px 단위로 직접 내려주기 */
+}
+
+
+.label-required::before {
+  content: "*";
+  color: red;
+  margin-right: 4px;
+  font-weight: bold;
+}

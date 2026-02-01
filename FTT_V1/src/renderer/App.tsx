@@ -1,0 +1,93 @@
+// src/renderer/App.tsx
+import React from "react";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { MyApp } from "./pages/MyApp";
+import FTT_Main from "./pages/FTT_Main";
+import FTT_Main_Rework from "./pages/FTT_Main_Rework";
+import FTT_Main_Grade from "./pages/FTT_Main_Grade";
+import FTT_Report from "./pages/FTT_Report";
+import ReportGrid from "./components/ReportGrid";
+import FTT_Report_Template from "./pages/FTT_Report_Template";
+import {
+  initI18n,
+  useI18nRerender,
+  setAppLanguage,
+  getCurrentLang,
+} from "./utils/i18n";
+
+// [CHG] 워밍업 유틸 추가
+import { runWarmupOnceFromRenderer } from "./utils/warmupClient";
+
+// 메뉴 → 렌더러로 전달되는 문자열을 LangCode로 안전 변환
+type LangCodeInferred = Parameters<typeof setAppLanguage>[0];
+const ALLOWED: readonly LangCodeInferred[] = [
+  "en",
+  "ko-KR",
+  "vi",
+  "zh-Hans",
+  "id",
+] as const;
+
+function isLangCode(v: string): v is LangCodeInferred {
+  return (ALLOWED as readonly string[]).includes(v as LangCodeInferred);
+}
+
+function App() {
+  const [ready, setReady] = React.useState(false);
+  const [langKey, setLangKey] = React.useState<string>("");
+
+  React.useEffect(() => {
+    (async () => {
+      await initI18n();
+      setLangKey(getCurrentLang());
+      setReady(true);
+    })();
+  }, []);
+
+  // Alt 메뉴(Language) 변경 즉시 반영
+  React.useEffect(() => {
+    const api: any = (window as any).langEvents; // ⬅ preload에서 노출
+    if (!api?.onChanged) return;
+
+    const off = api.onChanged(async (code: string) => {
+      if (!isLangCode(code)) {
+        console.warn("[i18n] Unknown language code from menu:", code);
+        return;
+      }
+      await setAppLanguage(code);
+      setLangKey(code);
+    });
+
+    return () => {
+      try {
+        off && off();
+      } catch {}
+    };
+  }, []);
+
+  // 내부 notify()를 구독해 최상단 리렌더
+  useI18nRerender();
+
+  // 렌더러 진입 시 딱 1회 워밍업
+  React.useEffect(() => {
+    runWarmupOnceFromRenderer().catch(() => {});
+  }, []);
+
+  if (!ready) return null;
+
+  return (
+    <Router>
+      <Routes key={langKey}>
+        <Route path="/" element={<MyApp />} />
+        <Route path="/ftt" element={< FTT_Main />} />
+        <Route path="/ftt/rework" element={< FTT_Main_Rework />} />
+        <Route path="/ftt/grade" element={< FTT_Main_Grade />} />
+        <Route path="/ftt/report" element={< FTT_Report />} />
+        <Route path="/ftt/report-template" element={< FTT_Report_Template />} />
+        <Route path="/grid" element={< ReportGrid />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

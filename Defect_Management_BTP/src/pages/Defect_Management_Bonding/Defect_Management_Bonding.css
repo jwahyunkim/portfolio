@@ -1,0 +1,125 @@
+/* Defect_Management_Bonding.css */
+
+/* Total 행 전체 스타일 */
+/* Total 행 전체 스타일 */
+.report-by-size [data-section="footer"] {
+  background-color: #8ab1ff !important;
+  /* 배경색 */
+  /* justify-content: flex-start !important; */
+  /* ← 이것이 핵심 */
+  font-weight: 700;
+  /* 글씨 두껍게 */
+  color: #111827;
+  /* 글자색 */
+}
+
+/* Total 행 숫자 정렬/패딩 조정하고 싶으면 예시 */
+.report-by-size [data-section="footer"] [data-ct-content] {
+  padding: 0 8px;
+  text-align: right;
+}
+
+/* subtotal 행 공통 스타일 */
+.report-by-size [data-row-kind="subtotal"] {
+  background-color: #f7cd9b !important;
+  font-weight: 700;
+}
+
+/* subtotal 행 가로 정렬 강제: 왼쪽 정렬 예시 */
+.report-by-size [data-row-kind="subtotal"] {
+  /* justify-content: flex-start !important; */
+  /* ← 이것이 핵심 */
+}
+
+
+
+
+
+/* 스크롤바 트랙(배경) */
+
+
+/* 스크롤바 영역 */
+::-webkit-scrollbar-vertical {
+  width: 0.8vw;
+}
+
+/* 스크롤바 트랙에 테두리 */
+::-webkit-scrollbar-track {
+  background-color: #f5f6f7;
+  /* 배경 */
+  border: 1px solid #ccc;
+  /* 왼쪽에 테두리 */
+}
+
+/* 스크롤바 thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 6px;
+}
+
+.my-table3 {
+  height: 71.1vh !important;
+}
+
+
+/* 개발환경 div 범위 가시화 전용 클래스. 실제 배포 시 제거 권장 */
+
+.dev-main {
+  background-color: #00ccff;
+}
+
+/* .dev-scope-header { background-color: #203764; } */
+
+.dev-scope-section {
+  background-color: #e2d13bff;
+}
+
+.dev-scope-filter-row {
+  background-color: #00f455ff;
+}
+
+/* .dev-scope-tag { background-color: #3b4dff; } */
+
+.dev-scope-stats-row {
+  background-color: #306e46ff;
+}
+
+.dev-scope-stat-box {
+  background-color: #3a3aff;
+}
+
+.dev-scope-legend-row {
+  background-color: #2a46e0ff;
+}
+
+/* .dev-scope-legend-yesterday { background-color: gray; }
+
+.dev-scope-legend-notinput { background-color: lightgray; }
+
+.dev-scope-legend-inputing { background-color: white; }
+
+.dev-scope-legend-today-active { background-color: orange; }
+
+.dev-scope-legend-today-done { background-color: limegreen; } */
+
+.dev-scope-grid-section {
+  background-color: #ff00ee;
+}
+
+.dev-scope-grid-section2 {
+  background-color: #ff00ee;
+}
+
+.dev-scope-mutibutton {
+  background-color: #ffee00;
+}
+
+
+
+
+
+
+.filter-row {
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}

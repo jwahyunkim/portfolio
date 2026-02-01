@@ -1,0 +1,31 @@
+{
+  "id": "slt_er_st_standard",
+  "odataUrl": "https://vhcnfcdsci.sap.changshininc.com:44300/sap/opu/odata4/sap/zqm_dm_er_standard_sb/srvd_a2x/sap/zqm_dm_er_standard_srv/0001/ZQM_I_ER_STANDARD",
+  "pull": {
+    "mode": "row",
+    "deleteMode": "update",
+    "row": {
+      "batchSize": 1,
+      "onError": "continue"
+    }
+  },
+  "schedule": "*/30 * * * * *",
+  "target": {
+    "schema": "mes",
+    "table": "dmbs_slt_er_st_standard",
+    "batchSize": 1000
+  },
+  "filterWindow": {
+  "mode": "sinceLastSuccess",
+  "pairs": [
+    { "date": "erdatlo", "time": "ertimlo" },
+    { "date": "aedatlo", "time": "aetimlo" }
+  ],
+  "combine": "or",
+  "timezone": "Asia/Seoul",
+  "inclusive": true,
+  "initial": { "lookback": { "hours": 9999 } }
+},
+  "pageSize": 5000,
+  "nullIfEmpty": true
+}

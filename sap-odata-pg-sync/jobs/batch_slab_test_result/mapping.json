@@ -1,0 +1,42 @@
+{
+  "columns": [
+    "plant_cd",
+    "bcard_key",
+    "op_cd",
+    "zone_cd",
+    "work_center",
+    "tc10",
+    "tc90",
+    "results",
+    "sfc_cd",
+    "bcard_level",
+    "bcard_type",
+    "er",
+    "created_date",
+    "created_time",
+    "changed_date",
+    "changed_time"
+  ],
+  "length": {
+    "plant_cd": 4,
+    "bcard_key": 20,
+    "op_cd": 10,
+    "zone_cd": 8,
+    "work_center": 10,
+    "results": 1,
+    "sfc_cd": 20,
+    "bcard_level": 2,
+    "bcard_type": 3,
+    "er": 10
+  },
+  "rename": {
+    "werks": "plant_cd",
+    "lot_no": "bcard_key",
+    "op_cd": "op_cd",
+    "ex2h": "er",
+    "erdatlo": "created_date",
+    "ertimlo": "created_time",
+    "aedatlo": "changed_date",
+    "aetimlo": "changed_time"
+  }
+}

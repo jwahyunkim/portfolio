@@ -1,0 +1,19 @@
+{
+  "name": "sap-odata-pg-sync",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node src/scheduler.js",
+    "sync:once": "node src/syncAll.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "node-cron": "^3.0.3",
+    "pg": "^8.11.5"
+  }
+}

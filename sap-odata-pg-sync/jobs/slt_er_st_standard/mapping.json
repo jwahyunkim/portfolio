@@ -1,0 +1,40 @@
+{
+  "columns": [
+    "plant_cd",
+    "mcd_no",
+    "model_cd",
+    "model_name",
+    "spec_er",
+    "use_er",
+    "down",
+    "remark",
+    "created_date",
+    "created_time",
+    "changed_date",
+    "changed_time"
+  ],
+  "length": {
+    "plant_cd": 4,
+    "mcd_no": 30,
+    "model_cd": 20,
+    "model_name": 20,
+    "spec_er": 20,
+    "use_er": 20,
+    "down": 20,
+    "remark": 20
+  },
+  "rename": {
+    "werks": "plant_cd",
+    "mcsno": "mcd_no",
+    "modelcd": "model_cd",
+    "modelnm": "model_name",
+    "erspec": "spec_er",
+    "usespec": "use_er",
+    "down": "down",
+    "remark": "remark",
+    "erdatlo": "created_date",
+    "ertimlo": "created_time",
+    "aedatlo": "changed_date",
+    "aetimlo": "changed_time"
+  }
+}

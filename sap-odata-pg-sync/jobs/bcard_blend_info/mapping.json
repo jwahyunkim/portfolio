@@ -1,0 +1,58 @@
+{
+  "header": {
+    "werks": "plant_cd"
+  },
+  "item": {
+    "fields": {
+      "werks": "plant_cd",
+      "batch_no": "batch_no",
+      "blend_date": "blend_date",
+      "mcs_no": "mcs_no",
+      "mat_col": "mat_col",
+      "mat_lot_s": "mat_lot_s",
+      "mat_lot_l": "mat_lot_l",
+      "aufnr": "order_number",
+      "sfc_cd": "sfc_cd",
+      "mcs_name": "mcs_name",
+      "bcard_qty": "bcard_qty",
+      "blend_s_s": "blend_s_s",
+      "blend_l_s": "blend_l_s",
+      "meins": "meins",
+      "machine_no": "machine_no",
+      "zone_cd": "zone_cd",
+      "op_cd": "op_cd",
+      "modelcd": "model_cd",
+      "modelnm": "model_name",
+      "create_dat": "create_dt",
+      "blend_time": "blend_time",
+      "weight_date": "weight_date",
+      "weight_time": "weight_time",
+      "work_center": "work_center"
+    }
+  },
+  "numberFields": [
+    "bcard_qty",
+    "blend_s_s",
+    "blend_l_s"
+  ],
+  "dateRules": {
+    "blend_date": "timestamptz->YYYY-MM-DD",
+    "create_dat": "timestamptz->YYYY-MM-DD",
+    "weight_date": "timestamptz->YYYY-MM-DD"
+  },
+  "timeRules": {
+    "blend_time": "pass",
+    "weight_time": "pass"
+  },
+  "nullPolicy": "empty",
+  "fieldNullPolicy": {
+    "create_dat": "null",
+    "weight_date": "null"
+  },
+  "length": {
+    "meins": 3,
+    "zone_cd": 8,
+    "modelcd": 70,
+    "modelnm": 70
+  }
+}

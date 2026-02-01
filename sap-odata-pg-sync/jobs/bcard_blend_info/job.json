@@ -1,0 +1,36 @@
+{
+  "id": "bcard_blend_info",
+  "mode": "push",
+  "odataUrl": "https://vhcnfcdsci.sap.changshininc.com:44300/sap/opu/odata4/sap/zqm_dm_recv_bld_batch_prd_sb/srvd_a2x/sap/zqm_dm_recv_bld_batch_prd_srv/0001/ZQM_I_BLD_BATCH_PRDINFO_HEADER",
+  "schedule": "*/30 * * * * *",
+  "source": {
+    "schema": "mes",
+    "table": "dmpd_bcard_blend_info",
+    "pk": [
+      "plant_cd",
+      "batch_no",
+      "blend_date",
+      "mcs_no",
+      "mat_col",
+      "mat_lot_s",
+      "mat_lot_l",
+      "order_number",
+      "sfc_cd"
+    ],
+    "batchSize": 1,
+    "failMode": "continue",
+    "sql": "SELECT plant_cd, batch_no, blend_date, mcs_no, mat_col, mat_lot_s, mat_lot_l, order_number, sfc_cd, mcs_name, bcard_qty, blend_s_s, blend_l_s, meins, machine_no, zone_cd, op_cd, model_cd, model_name, create_dt, blend_time, weight_date, weight_time, work_center FROM mes.dmpd_bcard_blend_info WHERE ifstatus = 'PENDING' ORDER BY blend_date, blend_time NULLS FIRST"
+  },
+  "sapSuccess": {
+    "checkMessages": true,
+    "echoItemMatch": {
+      "path": "_item",
+      "keys": [
+        "werks",
+        "sfc_cd"
+      ],
+      "requireAllItems": true
+    }
+  },
+  "nullIfEmpty": true
+}

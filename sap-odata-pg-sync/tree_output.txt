@@ -1,0 +1,51 @@
+|-- -p
+|-- jobs
+|   |-- batch_slab_test_result
+|   |   |-- job.json
+|   |   +-- mapping.json
+|   |-- bcard_batch_result
+|   |   |-- job.json
+|   |   +-- mapping.json
+|   |-- bcard_blend_info
+|   |   |-- job.json
+|   |   +-- mapping.json
+|   |-- blending_batch_slab_test_result
+|   |   |-- job.json
+|   |   +-- mapping.json
+|   |-- dmif_weighing_data1
+|   |   |-- job.json
+|   |   +-- mapping.json
+|   |-- sip_mcs_infor
+|   |   |-- job.json
+|   |   +-- mapping.json
+|   +-- slt_er_st_standard
+|       |-- job.json
+|       +-- mapping.json
+|-- src
+|   |-- clients
+|   |   |-- odataClient.js
+|   |   +-- odataWriter.js
+|   |-- db
+|   |   |-- loader.js
+|   |   +-- reader.js
+|   |-- util
+|   |   |-- config.js
+|   |   |-- jobState.js
+|   |   |-- logging.js
+|   |   +-- transform.js
+|   |-- jobRunner.js
+|   |-- scheduler.js
+|   +-- syncAll.js
+|-- state
+|   |-- batch_slab_test_result.json
+|   |-- blending_batch_slab_test_result.json
+|   |-- sip_mcs_infor.json
+|   +-- slt_er_st_standard.json
+|-- .env
+|-- .gitignore
+|-- package-lock.json
+|-- package.json
+|-- README.md
+|-- test.js
+|-- test.json
++-- Ʈ������ ��������_PowerShell.txt

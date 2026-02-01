@@ -1,0 +1,8 @@
+[
+  { "value": "001", "label": "Defective IP" },
+  { "value": "002", "label": "Defective PH" },
+  { "value": "003", "label": "Defective OS" },
+  { "value": "004", "label": "Defective PU" },
+  { "value": "005", "label": "Defective DMP" },
+  { "value": "006", "label": "Defective CMP" }
+]

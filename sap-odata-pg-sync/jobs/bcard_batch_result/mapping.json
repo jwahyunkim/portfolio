@@ -1,0 +1,47 @@
+{
+  "header": {
+    "werks": "plant_cd"
+  },
+  "item": {
+    "fields": {
+      "werks": "plant_cd",
+      "sfc_cd": "sfc_cd",
+      "bcard_level": "bcard_level",
+      "bcard_type": "bcard_type",
+      "bcard_key": "bcard_key",
+      "bcard_seq": "bcard_seq",
+      "work_center": "work_center",
+      "aufnr": "order_number",
+      "work_date": "work_date",
+      "bcard_qty": "bcard_qty",
+      "meins": "meins",
+      "machine_no": "machine_no",
+      "zone_cd": "zone_cd",
+      "mcs_no": "mcs_no",
+      "mcs_name": "mcs_name",
+      "mcs_color": "mcs_color",
+      "mcs_color_name": "mcs_color_name",
+      "op_cd": "op_cd",
+      "work_time": "work_time",
+      "scan_type": "scan_type",
+      "modelcd": "model_cd",
+      "modelnm": "model_nm",
+      "press_op_cd": "press_op_cd",
+      "lot_no": "lot_no"
+    }
+  },
+  "numberFields": [
+    "bcard_qty"
+  ],
+  "dateRules": {
+    "work_date": "timestamptz->YYYY-MM-DD"
+  },
+  "timeRules": {
+    "work_time": "timestamptz->HH:mm:ss"
+  },
+  "nullPolicy": "empty",
+  "fieldNullPolicy": {
+    "work_time": "zero"
+  },
+  "length": {}
+}

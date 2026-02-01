@@ -1,0 +1,10 @@
+[
+  { "value": "001", "label": "Production" },
+  { "value": "002", "label": "Change Lot" },
+  { "value": "003", "label": "Other" },
+  { "value": "004", "label": "Trial" },
+  { "value": "005", "label": "Sales Sample" },
+  { "value": "006", "label": "Test" },
+  { "value": "007", "label": "CFM" },
+  { "value": "008", "label": "Overrun" }
+]

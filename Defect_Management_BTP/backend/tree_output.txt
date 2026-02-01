@@ -1,0 +1,84 @@
+|-- src
+|   |-- config
+|   |   +-- db
+|   |       |-- mssql.js
+|   |       +-- postgres.js
+|   |-- controllers
+|   |   |-- mssql
+|   |   |   +-- dmpdSfcController.js
+|   |   |-- postgres
+|   |   |   |-- defectsController.js
+|   |   |   |-- dmpdProdOrderController.js
+|   |   |   +-- healthController.js
+|   |   |-- sap-dmc
+|   |   +-- sap-s4hana
+|   |-- middleware
+|   |-- models
+|   |   |-- mssql
+|   |   |-- postgres
+|   |   |   |-- defectsDao.js
+|   |   |   +-- pool.js
+|   |   +-- sap
+|   |-- routes
+|   |   |-- mssql
+|   |   |   +-- index.js
+|   |   |-- postgres
+|   |   |   +-- index.js
+|   |   |-- sap-dmc
+|   |   +-- sap-s4hana
+|   |-- services
+|   |   |-- mssql
+|   |   |   +-- dmpdSfcService.js
+|   |   |-- postgres
+|   |   |   |-- defectsService.js
+|   |   |   |-- dmpdProdOrderService.js
+|   |   |   +-- healthService.js
+|   |   |-- sap-dmc
+|   |   +-- sap-s4hana
+|   |-- utils
+|   |   |-- defectNo.js
+|   |   +-- time.js
+|   |-- validators
+|   |   +-- defectsSchema.js
+|   +-- server.js
+|-- tests
+|-- .env
+|-- package-lock.json
+|-- package.json
++-- README.MD
+|-- src
+|   |-- config
+|   |   +-- db
+|   |-- controllers
+|   |   |-- mssql
+|   |   |-- postgres
+|   |   |-- sap-dmc
+|   |   +-- sap-s4hana
+|   |-- middleware
+|   |-- models
+|   |   |-- mssql
+|   |   |-- postgres
+|   |   +-- sap
+|   |-- routes
+|   |   |-- mssql
+|   |   |-- postgres
+|   |   |-- sap-dmc
+|   |   +-- sap-s4hana
+|   |-- services
+|   |   |-- mssql
+|   |   |-- postgres
+|   |   |-- sap-dmc
+|   |   +-- sap-s4hana
+|   |-- utils
+|   |   |-- defectNo.js
+|   |   |-- normalizeIntColumn.js
+|   |   +-- time.js
+|   |-- validators
+|   |   +-- defectsSchema.js
+|   +-- server.js
+|-- tests
+|-- .env
+|-- package-lock.json
+|-- package.json
+|-- README.MD
++-- tree_output.txt

@@ -1,0 +1,85 @@
+/* message(ConfirmDialog) 관련 코드 시작 */
+.global_message {
+  width: 100%;
+  min-width: 500px;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  justify-content: left;
+}
+
+.global_message_header_icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  color: #f7c600;
+}
+
+.global_message_header_text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+
+.global_message_body {
+  font-size: 1rem;
+  line-height: 2;
+  white-space: pre-line;
+}
+
+/* message(ConfirmDialog) 관련 코드 끝 */
+
+/* 버튼 관련 코드 시작 */
+.global_button {
+  min-width: 120px;
+  height: 40px;
+  font-size: 14px;
+  font-family: var(--sapFontFamily);
+  font-weight: bold;
+  box-shadow: 0 0 0.125rem 0 rgba(34, 53, 72, 0.2), 0 0.125rem 0.25rem 0 rgba(34, 53, 72, 0.2);
+
+}
+
+.global_button_container {
+  justify-content: flex-end;
+  padding-block: 0.5rem;
+  gap: 0.5rem;
+}
+
+.global_button_emphasized {
+  background-color: var(--sapButton_Emphasized_Background);
+  border-color: var(--sapButton_Emphasized_BorderColor);
+  color: var(--sapButton_Emphasized_TextColor);
+}
+
+.global_button_emphasized:hover {
+  background-color: var(--sapButton_Emphasized_Hover_Background);
+  border-color: var(--sapButton_Emphasized_Hover_BorderColor);
+  color: var(--sapButton_Emphasized_Hover_TextColor);
+}
+
+.global_button_emphasized:active {
+  background-color: var(--sapButton_Emphasized_Active_Background);
+  border-color: var(--sapButton_Emphasized_Active_BorderColor);
+  color: var(--sapButton_Emphasized_Active_TextColor);
+}
+
+.global_button_transparent {
+  background-color: var(--sapButton_Lite_Background);
+  color: var(--sapButton_Lite_TextColor);
+  border-color: var(--sapButton_Lite_BorderColor);
+}
+
+.global_button_transparent:hover {
+  background-color: var(--sapButton_Lite_Hover_Background);
+  color: var(--sapButton_Lite_Hover_TextColor);
+  border-color: var(--sapButton_Lite_Hover_BorderColor);
+}
+
+.global_button_transparent:active {
+  background-color: var(--sapButton_Lite_Active_Background);
+  color: var(--sapButton_Lite_Active_TextColor);
+  border-color: var(--sapButton_Lite_Active_BorderColor);
+}
+
+/* 버튼 관련 코드 끝 */

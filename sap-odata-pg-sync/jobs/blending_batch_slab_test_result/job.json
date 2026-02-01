@@ -1,0 +1,29 @@
+{
+  "id": "blending_batch_slab_test_result",
+  "mode": "pull",
+  "odataUrl": "https://vhcnfcdsci.sap.changshininc.com:44300/sap/opu/odata4/sap/zqm_dm_bld_batch_slab_rslt_sb/srvd_a2x/sap/zqm_dm_bld_batch_slab_rslt_srv/0001/ZQM_I_BLD_BATCH_SLAB_TEST_RSLT",
+  "schedule": "*/30 * * * * *",
+  "pull": {
+    "mode": "row",
+    "deleteMode": "update",
+    "row": { "batchSize": 1, "onError": "continue"}
+  },
+  "target": {
+    "schema": "mes",
+    "table": "dmpd_blending_batch_slab_test_result",
+    "batchSize": 1000
+  },
+  "filterWindow": {
+  "mode": "sinceLastSuccess",
+  "pairs": [
+    { "date": "erdatlo", "time": "ertimlo" },
+    { "date": "aedatlo", "time": "aetimlo" }
+  ],
+  "combine": "or",
+  "timezone": "Asia/Seoul",
+  "inclusive": true,
+  "initial": { "lookback": { "hours": 9999 } }
+},
+  "pageSize": 5000,
+  "nullIfEmpty": true
+}

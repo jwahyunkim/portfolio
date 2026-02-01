@@ -1,0 +1,40 @@
+{
+  "id": "dmif_weighing_data1",
+  "mode": "push",
+  "odataUrl": "https://vhcnfcdsci.sap.changshininc.com:44300/sap/opu/odata4/sap/zqm_dm_recv_weight_thick_sb/srvd_a2x/sap/zqm_dm_recv_weight_thick_srv/0001/ZQM_I_WEIGHT_THICKNESS_HEADER",
+  "schedule": "*/30 * * * * *",
+  "source": {
+    "schema": "quality",
+    "table": "dmif_weighing_data1",
+    "pk": [
+      "plant_cd",
+      "fa_wc_cd",
+      "erp_fa_wc_cd",
+      "rst_date",
+      "rst_hms",
+      "style_dev",
+      "po_no",
+      "in_ymd",
+      "product_code",
+      "div",
+      "gen",
+      "size_cd",
+      "shift_cd"
+    ],
+    "batchSize": 1,
+    "failMode": "continue",
+    "sql": "SELECT plant_cd,fa_wc_cd,erp_fa_wc_cd,rst_date,rst_hms,style_dev,po_no,in_ymd,product_code,div,gen,size_cd,shift_cd,data_rst,standard_min,standard_max,status,value_1,value_2,value_3,value_4,value_5,midsole_type,thickness_1,thickness_2,wegith_unit,thick_unit FROM quality.dmif_weighing_data1 WHERE ifstatus = 'PENDING1' ORDER BY rst_date, rst_hms NULLS FIRST"
+  },
+  "sapSuccess": {
+    "checkMessages": true,
+    "echoItemMatch": {
+      "path": "_item",
+      "keys": [
+        "werks",
+        "Fa_wc_cd"
+      ],
+      "requireAllItems": true
+    }
+  },
+  "nullIfEmpty": true
+}

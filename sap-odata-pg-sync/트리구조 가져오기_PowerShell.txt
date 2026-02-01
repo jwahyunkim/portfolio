@@ -1,0 +1,51 @@
+function Show-Tree {
+    param (
+        [string]$Path = ".",
+        [int]$MaxDepth = 3,
+        [int]$CurrentDepth = 0,
+        [string[]]$ExcludeFolders = @(),
+        [string]$Prefix = "",
+        [string]$OutputFile = $null
+    )
+
+    if ($CurrentDepth -ge $MaxDepth) { return }
+
+    $items = Get-ChildItem -Path $Path | Where-Object {
+        -not ($ExcludeFolders -contains $_.Name)
+    }
+
+    $count = $items.Count
+    for ($i = 0; $i -lt $count; $i++) {
+        $item = $items[$i]
+        $isLast = ($i -eq $count - 1)
+
+        # ASCII 문자 사용
+        $branch = if ($isLast) { "+-- " } else { "|-- " }
+        $line = "$Prefix$branch$($item.Name)"
+
+        if ($OutputFile) {
+            Add-Content -Path $OutputFile -Value $line
+        } else {
+            Write-Output $line
+        }
+
+        if ($item.PSIsContainer) {
+            if ($isLast) {
+                $newPrefix = $Prefix + "    "
+            } else {
+                $newPrefix = $Prefix + "|   "
+            }
+            Show-Tree -Path $item.FullName -MaxDepth $MaxDepth -CurrentDepth ($CurrentDepth + 1) -ExcludeFolders $ExcludeFolders -Prefix $newPrefix -OutputFile $OutputFile
+        }
+    }
+}
+
+
+///////////////이거 입력 후 
+
+Show-Tree -Path . -MaxDepth 3 -ExcludeFolders @("node_modules") -OutputFile "tree_output.txt"
+
+
+
+
+//////////////이거 입력 해야함
